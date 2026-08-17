@@ -1,0 +1,51 @@
+sample test case:
+text_input:
+
+1.eng-other:
+Technology has revolutionized the way humans communicate, bridging language barriers and making information accessible to everyone. Our Smart ISL Translator integrates advanced gesture recognition, voice processing, and text translation, providing seamless interaction between hearing and speech-impaired individuals and the wider community. This innovation not only enhances communication but also promotes inclusivity, empowering individuals to express themselves freely and confidently in diverse environments.
+
+2.Input - Chinese
+Target - English
+Enter text
+智能 ISL 翻译器利用 AI 驱动的手势识别技术，搭建了聋人群体与社会之间的沟通桥梁。
+output:The intelligent ISL translator uses AI-driven gesture recognition technology to build a communication bridge between the deaf community and society.
+
+3.Input - Malayalam
+Target - English
+Enter text
+AI അടിസ്ഥാനമാക്കിയ കൈയഭിനയ തിരിച്ചറിയൽ സാങ്കേതികവിദ്യ ഉപയോഗിച്ച് സ്മാർട്ട് ISL ട്രാൻസ്ലേറ്റർ ശ്രവണ വൈകല്യമുള്ള സമൂഹത്തെയും സമൂഹത്തിലെ മറ്റ് വിഭാഗങ്ങളെയും തമ്മിലുള്ള ആശയവിനിമയ വിടവുകൾ കുറയ്ക്കുന്നു.
+output:Smart ISL Translator by using AI-based handshake recognition technology reduces communication gaps between the hearing impaired community and other segments of society.
+
+
+audio file:
+
+that say the word in other languages (that same word))
+
+1.bonjour.mp3 ((hello)
+2.bonjour-comment-ca-va-aujourdhui.mp3 (Hello, how are you today?) 
+
+record file:
+1.hello, I am Janasruthi from rathinam college of arts and science
+
+2.Good morning everyone. Today I am presenting our smart translator system, which helps convert speech into multiple languages. This project is designed to improve communication and make technology more accessible for all users.
+
+
+custom_vocabulory:
+
+1.Real-Time Translation	Instant language conversion	Real-time translation improves global communication.	Traducción en tiempo real (Spanish)
+
+2.Smart Technology	Advanced AI-based system	Smart technology makes daily life easier.	智能技术 (Chinese)
+
+
+word to gestures:
+1.hello, I am Janasruthi from rathinam college of arts and science
+2.smart isl to multilingual translator
+
+
+gestures to text and speech:
+1.one finger - 1
+2.two finger - 2
+3.three finger - help
+4.four finger - hello
+5.five finger - 1 or 5
+6.not detected - unknown

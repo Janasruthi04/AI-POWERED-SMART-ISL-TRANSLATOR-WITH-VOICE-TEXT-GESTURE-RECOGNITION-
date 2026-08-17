@@ -1,70 +1,98 @@
-# AI-POWERED-SMART-ISL-TRANSLATOR-WITH-VOICE-TEXT-GESTURE-RECOGNITION-
-An AI-powered multilingual communication and learning application designed to help bridge communication barriers for users who depend on Indian Sign Language or face speech/hearing limitations.
-The system combines Speech-to-Text, Text-to-Speech, multilingual translation, conversational AI, custom vocabulary management, and words-to-gesture visualization into a unified Gradio-based application.
+# 🌐 Smart ISL Translator with Voice, Text & Gesture Recognition
 
-🚀 Key Features
-🎙️ Speech-to-Text (ASR) – Converts uploaded or recorded speech into text using AssemblyAI.
-🌐 Multilingual Translation – Translates text between supported languages using chunk-based translation.
-🔊 Text-to-Speech (TTS) – Converts translated text into speech using gTTS.
-🤖 Conversational AI – Uses Google Gemini to provide AI-supported language practice and conversational tutoring.
-📚 Custom Vocabulary – Stores domain-specific words, meanings, usage, and translations using a JSON-based vocabulary system.
-🤟 Words-to-Gestures – Maps alphabetic characters to sign-language gesture images to support sign-language learning.
-🖥️ Interactive Interface – Provides an integrated Gradio interface for text, audio, translation, and learning workflows.
-🔄 Multimodal Workflow – Supports typed text, uploaded audio, and recorded speech as inputs.
-🧠 Technologies Used
+An AI-powered multilingual translator that converts **text, speech, and words into sign language gestures**, with additional features like **text-to-speech, live language learning, and custom vocabulary building**.
 
-Programming:
-Python
+---
 
-AI / NLP:
-Natural Language Processing, Conversational AI, Google Gemini
+## 🚀 Features
 
-Speech & Audio:
-AssemblyAI, Speech-to-Text (ASR), Text-to-Speech (TTS), Audio Processing
+### 🔤 Text Translation
+- Translate text between multiple languages
+- Supports: English, French, Spanish, German, Hindi, Telugu, Tamil
 
-Translation:
-Python Translate Library
+### 🎤 Speech-to-Text Translation
+- Upload audio files and convert speech → text → translation
 
-Text-to-Speech:
-gTTS
+### 🎙️ Live Audio Recording
+- Record voice directly and translate in real-time
 
-Frontend / Application:
-Gradio
+### 🔊 Text-to-Speech (TTS)
+- Converts translated text into natural audio output
 
-Data & Storage:
-JSON-based Custom Vocabulary
+### 🤖 AI Language Teacher
+- Interactive chatbot for language learning
+- Provides:
+  - Meaning
+  - Pronunciation
+  - Example sentence
 
-System Workflow
-Text Input ───────────────┐
-                          │
-Audio / Recorded Speech ──┤
-                          ↓
-                  Speech-to-Text
-                    (AssemblyAI)
-                          ↓
-                Multilingual Translation
-                          ↓
-             ┌────────────┴────────────┐
-             ↓                         ↓
-       Text Output                Text-to-Speech
-                                         ↓
-                                  Audio Output
+### 📚 Custom Vocabulary
+- Add and store your own words
+- Includes meaning, example, and translation
+
+### ✋ Words to Sign Language Gestures
+- Converts text into sign language alphabets (A–Z)
+- Supports multiple sign languages:
+  - American (ASL)
+  - British (BSL)
+  - Australian (AusSL)
+  - Chinese (CSL)
+  - French (FSL)
+  - Spanish (LSE)
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend/UI:** Gradio  
+- **Speech Recognition:** AssemblyAI  
+- **Translation:** translate (Python library)  
+- **Text-to-Speech:** gTTS  
+- **AI Chatbot:** Google Gemini API  
+- **Image Processing:** Pillow  
+
+---
+
+## 📁 Project Structure
 
 
-                    ┌─────────────────┐
-                    ↓                 ↓
-              Gemini AI          Custom Vocabulary
-           Conversational AI       Management
+project/
+│
+├── main.py
+├── custom_vocab.json
+│
+├── gestures/
+│ ├── ASL/
+│ ├── BSL/
+│ ├── AusSL/
+│ ├── CSL/
+│ ├── FSL/
+│ └── LSE/
+│
+└── generated_audio_files/
 
 
-                    ↓
-             Words-to-Gestures
-              Sign Visualization
+---
 
-Project Objectives
-Enable accessible communication through text and speech.
-Support multilingual translation and speech output.
-Provide conversational AI-based language practice.
-Maintain reusable vocabulary for personalized learning.
-Provide basic sign-linked educational support through gesture visualization.
-Integrate multiple AI-powered communication capabilities into a single application.
+## 📦 Installation
+
+### 1️⃣ Clone the Repository
+```bash
+git clone <your-repo-link>
+cd project
+2️⃣ Install Dependencies
+pip install gradio assemblyai translate gtts google-generativeai pillow
+🔑 API Setup
+AssemblyAI
+Replace with your API key:
+aai.settings.api_key = "YOUR_API_KEY"
+Google Gemini
+genai.configure(api_key="YOUR_API_KEY")
+
+pip install -r requirements.txt
+
+▶️ Run the Application
+python translator.py
+
+Then open in browser:
+http://127.0.0.1:7861
